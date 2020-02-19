@@ -26,8 +26,10 @@ repositories {
 }
 
 dependencies {
-    implementation(name: 'RobotCore-release', ext: 'aar')
-    implementation(name: 'Hardware-release', ext: 'aar')
+    implementation project(':Hardware')
+    implementation project(':RobotCore')
+//    implementation(name: 'RobotCore-release', ext: 'aar')
+//    implementation(name: 'Hardware-release', ext: 'aar')
 }
 
 task HOMARJavadoc(type: Javadoc) {
